@@ -141,7 +141,7 @@ async function Test_OrchestratorQuery(){
 
     TEST_WS.send(JSON.stringify(oreq))
 
-    var ret_signal = Test_CheckReadChannelWithTimeOut(10000)
+    var ret_signal = await Test_CheckReadChannelWithTimeOut(10000)
 
     if (ret_signal == 1){
         return
