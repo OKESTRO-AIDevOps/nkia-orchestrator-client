@@ -1,0 +1,3 @@
+
+
+alert("npia oclient imported")
