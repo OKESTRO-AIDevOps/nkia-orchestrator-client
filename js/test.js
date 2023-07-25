@@ -1,5 +1,5 @@
 
-var TEST_WS
+var TEST_WS = {}
 
 var TEST_READ_CHANNEL = {}
 
@@ -165,9 +165,5 @@ function Test_Delay(time) {
 Test_BodySet()
 
 TEST_WS = Test_OrchestratorInit()
-
-if (JSON.stringify(TEST_WS) === '{}'){
-    return
-}
 
 console.log('test ready')
