@@ -29,7 +29,7 @@ function Test_BodySet(){
     
     `
 
-    document.body.innerHTML += inject
+    $('body').html(inject)
 
 }
 
