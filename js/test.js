@@ -48,11 +48,20 @@ function Test_OrchestratorInit(){
 
     var trail_path = '/osock/front-test'
 
+    if (proto == 'http'){
+
+        proto = 'ws://'
+
+    } else if (proto == 'https'){
+
+        proto = 'wss://'
+    }
+
     var ws_url = proto + urlbody + trail_path
 
     console.log(ws_url)
 
-    if (REQ_KEY){
+    if (!REQ_KEY){
         alert("request key is empty")
         return {}
     }
