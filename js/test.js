@@ -52,6 +52,10 @@ function Test_OrchestratorInit(){
 
         proto = 'ws://'
 
+        var urlbody_port = urlbody.split(':')
+
+        urlbody = urlbody_port[0] + ':' + '7331'
+
     } else if (proto == 'https'){
 
         proto = 'wss://'
